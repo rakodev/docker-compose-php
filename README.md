@@ -25,6 +25,15 @@ Run PHPUnit Tests
 docker-compose exec php-fpm-app bash -c 'cd /application/app && ./vendor/bin/phpunit'
 ```
 
+Code Coverage
+-----
+```sh
+docker-compose exec php-fpm-app bash -c 'cd /application/app && ./vendor/bin/phpunit --coverage-html tests/coverage'
+```
+##### See your code coverage result here
+[http://localhost:8081/](http://localhost:8081/)
+
+
 Good to know - Tips
 -----
 ##### Dump Autoload
